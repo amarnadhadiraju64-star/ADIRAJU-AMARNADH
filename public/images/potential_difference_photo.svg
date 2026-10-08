@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <!-- Background Clipboard Gradients -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="50%" stop-color="#edd5be"/>
+      <stop offset="100%" stop-color="#e2c5aa"/>
+    </linearGradient>
+
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#faf5ee"/>
+    </linearGradient>
+
+    <!-- Field Gradient -->
+    <radialGradient id="fieldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </radialGradient>
+
+    <!-- Top Banner Gradient -->
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Shadows -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#451a03" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="handShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="6" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Wooden Board -->
+  <rect x="0" y="0" width="1280" height="720" fill="#d97706"/>
+  <rect x="15" y="15" width="1250" height="690" rx="24" fill="url(#boardGrad)" stroke="#b45309" stroke-width="6"/>
+
+  <!-- Metal Corner Clips -->
+  <g fill="#94a3b8" stroke="#475569" stroke-width="2">
+    <!-- Top-left clip -->
+    <rect x="25" y="25" width="60" height="18" rx="4" transform="rotate(-30 55 34)"/>
+    <!-- Top-right clip -->
+    <rect x="1195" y="25" width="60" height="18" rx="4" transform="rotate(30 1225 34)"/>
+  </g>
+
+  <!-- Paper Sheet on Clipboard -->
+  <rect x="45" y="35" width="1190" height="650" rx="18" fill="url(#paperGrad)" stroke="#d6d3d1" stroke-width="2" filter="url(#dropShadow)"/>
+
+  <!-- TOP HEADER BANNER (Telugu: థియరీ & కాన్సెప్ట్స్ / పొటెన్షియల్ డిఫరెన్స్) -->
+  <g transform="translate(640, 95)" filter="url(#dropShadow)">
+    <rect x="-350" y="-70" width="700" height="125" rx="28" fill="url(#bannerGrad)" stroke="#facc15" stroke-width="4"/>
+    
+    <!-- Row 1: థియరీ & కాన్సెప్ట్స్ -->
+    <text x="0" y="-18" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="900" fill="#fef08a" stroke="#000" stroke-width="2.5" text-anchor="middle" filter="url(#textGlow)">
+      థియరీ &amp; కాన్సెప్ట్స్
+    </text>
+
+    <!-- Row 2: పొటెన్షియల్ డిఫరెన్స్ -->
+    <text x="0" y="36" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#fef08a" stroke="#000" stroke-width="2.5" text-anchor="middle" filter="url(#textGlow)">
+      పొటెన్షియల్ డిఫరెన్స్
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CENTRAL CIRCULAR ELECTRIC FIELD -->
+  <!-- ======================================================== -->
+  <g transform="translate(640, 470)">
+    <!-- Electric Field Circle -->
+    <circle cx="0" cy="0" r="235" fill="url(#fieldGrad)" stroke="#0f172a" stroke-width="4"/>
+
+    <!-- "Electric field" label at bottom center -->
+    <text x="0" y="200" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#0f172a" text-anchor="middle">
+      Electric field
+    </text>
+
+    <!-- Formula inside field: W = F × S -->
+    <text x="90" y="-60" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#0f172a" text-anchor="middle">
+      W = F × S
+    </text>
+
+    <!-- Source Positive Charge (+) on Left -->
+    <g transform="translate(-80, -25)">
+      <circle cx="0" cy="0" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+      <circle cx="0" cy="0" r="22" fill="#ef4444"/>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Connecting line to Point B and displacement arrow -->
+    <!-- Point B dot -->
+    <circle cx="-10" cy="-25" r="5" fill="#0f172a"/>
+    <text x="-10" y="2" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0f172a" text-anchor="middle">B</text>
+
+    <!-- Arrow pointing to the right from B towards q+ -->
+    <g>
+      <line x1="5" y1="-25" x2="85" y2="-25" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="95,-25 80,-31 80,-19" fill="#0f172a"/>
+    </g>
+
+    <!-- Displaced Unit Charge Label: q+ -->
+    <text x="130" y="-15" font-family="Georgia, serif" font-size="32" font-style="italic" font-weight="bold" fill="#0f172a" text-anchor="middle">
+      q+
+    </text>
+
+    <!-- Sound / Repulsion waves near fingertip -->
+    <g stroke="#0f172a" stroke-width="2.5" fill="none">
+      <path d="M 165 -45 C 172 -30, 172 -10, 165 5"/>
+      <path d="M 175 -50 C 185 -30, 185 -5, 175 12"/>
+    </g>
+
+    <!-- Illustrated Hand pushing charge q+ (index finger pointing rightwards/upwards) -->
+    <g transform="translate(145, 10)" filter="url(#handShadow)">
+      <!-- Palm / Wrist entering from bottom right -->
+      <path d="M 10 180 
+               C 20 120, 50 60, 75 40 
+               C 95 25, 115 45, 125 80 
+               C 135 120, 145 160, 155 190
+               Z" 
+            fill="#fca582" stroke="#7c2d12" stroke-width="3"/>
+
+      <!-- Curled lower fingers (pinky, ring, middle) -->
+      <path d="M 40 70 C 45 40, 80 40, 80 65 C 80 80, 55 90, 40 70 Z" fill="#fca582" stroke="#7c2d12" stroke-width="2.5"/>
+      <path d="M 50 95 C 55 70, 90 70, 90 95 C 90 110, 65 120, 50 95 Z" fill="#fca582" stroke="#7c2d12" stroke-width="2.5"/>
+      <path d="M 60 120 C 65 100, 95 100, 95 120 C 95 135, 75 145, 60 120 Z" fill="#fca582" stroke="#7c2d12" stroke-width="2.5"/>
+
+      <!-- Index Finger extending up to touch/point to q+ -->
+      <path d="M 0 -35 
+               C 5 -55, 25 -55, 30 -35 
+               C 38 -5, 42 25, 45 55 
+               C 30 65, 15 50, 10 30 
+               C 5 10, -2 -15, 0 -35 
+               Z" 
+            fill="#fca582" stroke="#7c2d12" stroke-width="3"/>
+
+      <!-- Fingernail on index finger -->
+      <path d="M 8 -48 C 14 -56, 22 -56, 24 -48 C 24 -40, 18 -40, 8 -48 Z" fill="#ffedd5" stroke="#9a3412" stroke-width="1.5"/>
+
+      <!-- Crease lines -->
+      <line x1="8" y1="-10" x2="22" y2="-10" stroke="#9a3412" stroke-width="1.8"/>
+      <line x1="12" y1="20" x2="28" y2="20" stroke="#9a3412" stroke-width="1.8"/>
+
+      <!-- Thumb -->
+      <path d="M -15 25 C -25 45, -20 70, -5 85 C 10 95, 25 85, 20 65 C 15 45, -5 15, -15 25 Z" fill="#fca582" stroke="#7c2d12" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- LEFT COLUMN: DEFINITIONS, NOTATIONS & 1 VOLT -->
+  <!-- ======================================================== -->
+  <g transform="translate(90, 290)">
+    <!-- q = unit charge -->
+    <text x="0" y="0" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#0f172a">
+      <tspan font-style="italic">q</tspan> = unit
+    </text>
+    <text x="50" y="36" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0f172a">
+      charge
+    </text>
+
+    <!-- A : Initial point -->
+    <text x="0" y="90" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0f172a">
+      <tspan font-weight="900">A</tspan> : Initial point
+    </text>
+
+    <!-- B : Final point -->
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0f172a">
+      <tspan font-weight="900">B</tspan> : Final point
+    </text>
+
+    <!-- W = Work done on unit charge to displace it from A to B -->
+    <text x="0" y="180" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#0f172a">
+      <tspan font-style="italic">W</tspan> = Work done
+    </text>
+    <text x="45" y="215" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#0f172a">
+      on unit
+    </text>
+    <text x="45" y="248" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#0f172a">
+      charge to
+    </text>
+    <text x="25" y="280" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#0f172a">
+      displace it from
+    </text>
+    <text x="55" y="315" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">
+      A to B
+    </text>
+
+    <!-- 1 VOLT at bottom left -->
+    <text x="30" y="375" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#0f172a">
+      1 VOLT
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- RIGHT COLUMN: MATHEMATICAL FORMULAS -->
+  <!-- ======================================================== -->
+  <g transform="translate(1010, 360)">
+    <!-- Formula 1: V = W / q -->
+    <g transform="translate(0, 0)">
+      <text x="-40" y="42" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#0f172a" text-anchor="end">
+        V =
+      </text>
+      <!-- Fraction W / q -->
+      <text x="50" y="8" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#0f172a" text-anchor="middle">
+        W
+      </text>
+      <line x1="10" y1="24" x2="90" y2="24" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+      <text x="50" y="82" font-family="Georgia, serif" font-size="58" font-style="italic" font-weight="bold" fill="#0f172a" text-anchor="middle">
+        q
+      </text>
+    </g>
+
+    <!-- Formula 2: 1V = 1J / 1C -->
+    <g transform="translate(0, 185)">
+      <text x="-35" y="36" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#0f172a" text-anchor="end">
+        1V =
+      </text>
+      <!-- Fraction 1J / 1C -->
+      <text x="45" y="10" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">
+        1J
+      </text>
+      <line x1="15" y1="22" x2="75" y2="22" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+      <text x="45" y="62" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">
+        1C
+      </text>
+    </g>
+  </g>
+</svg>

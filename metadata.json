@@ -1,0 +1,6 @@
+{
+  "name": "Master Physics: Electricity (Amar) - AP SSC Study Hub",
+  "description": "Complete interactive AP SSC Class 10 Physics Electricity study hub with simulations, derivations, virtual experiments, comparisons, solved problems, and electron insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
